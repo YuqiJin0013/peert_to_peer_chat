@@ -1,8 +1,8 @@
 # Objective: Facilitates direct communication between clients via a central server.
 
-## Server: Orchestrates connections among clients, relaying messages from one client to another.
+### Server: Orchestrates connections among clients, relaying messages from one client to another.
 
-### Features:
+### Server Features:
 
 * Establishes a TCP Socket.
 * Listens for incoming connections.
@@ -13,9 +13,10 @@
 * If the message requests a list of clients, the server provides the client dictionary's contents.
 * For chat messages, the server forwards them to all clients except the sender and logs them in an SQLite database.
 * Error handling: If a message receiving error occurs, the server removes the client from the dictionary and closes its socket.
-* Client: Connects to the server to engage in chats with other clients by sending messages through the server.
 
-### Features:
+### Client: Connects to the server to engage in chats with other clients by sending messages through the server.
+
+### Client Features:
 
 * Establishes a TCP socket.
 * Connects to the server.
