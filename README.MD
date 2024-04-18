@@ -26,3 +26,8 @@
 * The client sends the chat message to the server.
 * It sends a keep-alive message every 30 seconds to prevent connection closure due to inactivity.
 * The client waits up to 5 seconds for a server response, displaying it on the console if received.
+
+### Data Protection
+Input Validation:
+* Tests the validate_ip function with both valid and invalid IP addresses.
+* Tests the validate_port function with valid and invalid port numbers.
